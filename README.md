@@ -25,16 +25,16 @@ Then you need to set up ELK using docker
 
 Firstly you clone elk using the following command
 
-'$ git clone ....'
+`$ git clone ....`
 
 
 Then you up the docker compose
 
-'$ sudo docker compose up -d'
+`$ sudo docker compose up -d`
 
 > ! If there is an ERROR message try this
 
-'$ dkpg '
+`$ dkpg`
 
 
 4. Create the web app and interconnect it with the REST API of ELK
