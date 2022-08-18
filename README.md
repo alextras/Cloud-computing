@@ -1,4 +1,4 @@
-# Cloud-computing
+# Cloud-computing ☁️
 This is a repository for the semester project in cloud computing
 
 **Aim** of the project is:
@@ -33,7 +33,7 @@ We change the default port #22 to another one
 
 In sshd_config we set PermitRootLogin to no
 
-3. RSA cryptography 🔐
+3. RSA cryptography 🗝🔑
 
 ## 3. Set up ELK stack (using Docker) and secure it using TLS protocol
 
