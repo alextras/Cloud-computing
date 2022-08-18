@@ -19,7 +19,7 @@ This is a repository for the semester project in cloud computing
 
 ## 3. Set up ELK stack (using Docker) and secure it using TLS protocol
 
-At first you need do set up Docker 🐳
+At first you need to set up Docker 🐳
 
 Then you need to set up ELK using docker
 
