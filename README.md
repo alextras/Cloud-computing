@@ -23,9 +23,10 @@ At first you need do set up Docker
 
 Then you need to set up ELK using docker
 
+
 Firstly you clone elk using the following command
 
-`$ git clone ....`
+`$ git clone https://github.com/deviantony/docker-elk `
 
 
 Then you up the docker compose
