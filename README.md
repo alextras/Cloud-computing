@@ -12,7 +12,18 @@ This is a repository for the semester project in cloud computing
 
 **Steps** that will be followed:
 ## 1. Create a VM that will host the ELK stack and the web app
+We create the VM using VirtualBox as the hypervisor
+For more info on how to download VirtualBox
 
+At first we download an Ubuntu server image which will be the OS that wil be installed in the VM and then we make the specific configurations.
+
+The VM should have the following features:
+- OS: Ubuntu server 18.04 LTS
+- System memory / RAM: 4 GB (at least)
+- CPU: 2 GHz dual core processor
+- Hard drive space: 60 GB (at least)
+- Network: Bridged
+- Sound: off
 
 ## 2. Secure the VM (using SSH)
 In order to secure the VM we set up the SSH server
