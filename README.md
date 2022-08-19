@@ -90,8 +90,8 @@ sudo docker compose up -d
 
 > ! If there is an ERROR message about .env files try removing docker-credential-helpers with the following command:
 > ```console
-$ dpkg -r --force-depends golang-docker-credential-helpers
-```
+> $ dpkg -r --force-depends golang-docker-credential-helpers
+> ```
 
 ## 4. Create the web app and interconnect it with the REST API of ELK
 
