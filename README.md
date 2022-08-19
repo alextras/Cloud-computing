@@ -76,8 +76,7 @@ the name of the new directory is `docker-elk` and it contains all the docker ima
 Then we create and start the containers using docker compose `sudo docker compose ud -d`
 - `docker compose`: command is responsible to define and run multi-container applications with Docker
 - `docker compose up`: creates and starts containers
-` $ sudo docker compose up -d`
-> Use the flag `-d` so you enable detached mode (runs containers in the background)
+- `-d` flag: enables detached mode (runs containers in the background)
 
 > ! If there is an ERROR message about .env files try this removing docker-credential-helpers with the following command:
 > `$ dpkg -r --force-depends golang-docker-credential-helpers `
