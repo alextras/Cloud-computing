@@ -32,8 +32,8 @@ Steps:
 
 1. We remove existing SSH servers that may have issues
 
-```console
-$ sudo apt-get remove openssh-server
+$ ```console
+sudo apt-get remove openssh-server
 ```
 
 2. We install the ssh 
