@@ -32,7 +32,8 @@ Steps:
 
 1. We remove existing SSH servers that may have issues
 
-$ ```console
+$
+```console
 sudo apt-get remove openssh-server
 ```
 
