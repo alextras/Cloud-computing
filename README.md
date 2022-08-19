@@ -10,11 +10,13 @@ This is a repository for the semester project in cloud computing
   - the ELK stack
   - the secure function of ELK stack using the TLS protocol
 
-Here is a task list to keep you on track:
-- [x] create a VM
-- [ ] secure the VM using SSH
-- [ ] docker setup
-- [ ] elk setup
+Here's a task list to help you keep on track:
+- [x] create VM
+- [x] SSH setup
+- [x] SSH secure
+- [x] Docker setup
+- [x] ELK setup
+- [ ] ELK secure with TLS
 
 **Steps** that will be followed:
 ## 1. Create a VM that will host the ELK stack and the web app
