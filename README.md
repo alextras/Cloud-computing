@@ -49,7 +49,7 @@ sudo apt-get remove openssh-server
 sudo apt-get install openssh-server
 ```
 
-3. We check the SSH server status to be active ☑️
+3. We check the SSH server status to be active
 ```console
 sudo service status ssh
 ```
@@ -57,7 +57,7 @@ sudo service status ssh
 
 Then we secure the SSH by the following steps
 
-1. Change default port 🚪
+1. Change default port
 
 We change the default port #22 to another one
 
@@ -66,7 +66,7 @@ We change the default port #22 to another one
 
 In sshd_config we set PermitRootLogin to no
 
-3. RSA cryptography 🔐 
+3. RSA cryptography
 
 
 
