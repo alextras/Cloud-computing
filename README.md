@@ -67,15 +67,17 @@ At first you need to set up Docker 🐳
 ### ELK setup
 Then you need to set up ELK using docker
 
-
-Firstly you clone elk using the following command
+Firstly we clone an existing repository into a new directory using the following command
 
 `$ git clone https://github.com/deviantony/docker-elk `
 
+the name of the new directory is `docker-elk` and it contains all the docker images needed to setup elk contairs
 
-Then you up the docker compose
-
-`$ sudo docker compose up -d`
+Then we create and start the containers using docker compose
+- `docker compose` command is responsible to `define and run multi-container applications with Docker`
+- with `docker compose up` you can `create and start containers`
+` $ sudo docker compose up -d`
+> use the flag `-d` so you enable `Detached mode: Run containers in the background`
 
 > ! If there is an ERROR message about .env files try this removing docker-credential-helpers with the following command:
 > `$ dpkg -r --force-depends golang-docker-credential-helpers `
