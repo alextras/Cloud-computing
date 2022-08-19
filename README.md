@@ -1,8 +1,5 @@
 # Cloud-computing ☁️
 This is a repository for the semester project in cloud computing
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
 
 **Aim** of the project is:
 - to create a **web app** 
@@ -35,13 +32,19 @@ Steps:
 
 1. We remove existing SSH servers that may have issues
 
-```{sudo apt-get remove openssh-server}```
+```console
+$ sudo apt-get remove openssh-server
+```
 
 2. We install the ssh 
-```{sudo apt-get install openssh-server}```
+```console
+$ sudo apt-get install openssh-server
+```
 
 3. We check the SSH server status to be active ☑️
-```{sudo service status ssh}```
+```console
+$ sudo service status ssh
+```
 
 
 Then we secure the SSH by the following steps
@@ -70,7 +73,9 @@ Then you need to set up ELK using docker
 
 Firstly we clone an existing repository into a new directory using the following command
 
-```{$ git clone https://github.com/deviantony/docker-elk}```
+```console
+$ git clone https://github.com/deviantony/docker-elk
+```
 
 the name of the new directory is `docker-elk` and it contains all the docker images needed to setup elk containers
 
