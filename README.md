@@ -32,19 +32,18 @@ Steps:
 
 1. We remove existing SSH servers that may have issues
 
-$
 ```console
 sudo apt-get remove openssh-server
 ```
 
 2. We install the ssh 
 ```console
-$ sudo apt-get install openssh-server
+sudo apt-get install openssh-server
 ```
 
 3. We check the SSH server status to be active ☑️
 ```console
-$ sudo service status ssh
+sudo service status ssh
 ```
 
 
@@ -75,20 +74,24 @@ Then you need to set up ELK using docker
 Firstly we clone an existing repository into a new directory using the following command
 
 ```console
-$ git clone https://github.com/deviantony/docker-elk
+git clone https://github.com/deviantony/docker-elk
 ```
 
 the name of the new directory is `docker-elk` and it contains all the docker images needed to setup elk containers
 
 Then we create and start the containers using docker compose 
-```{$ sudo docker compose up -d`}```
+```console
+sudo docker compose up -d
+```
 
 - `docker compose`: command is responsible to define and run multi-container applications with Docker
 - `docker compose up`: creates and starts containers
 - `-d` flag: enables detached mode (runs containers in the background)
 
 > ! If there is an ERROR message about .env files try removing docker-credential-helpers with the following command:
-> ```{$ dpkg -r --force-depends golang-docker-credential-helpers }```
+> ```console
+$ dpkg -r --force-depends golang-docker-credential-helpers
+```
 
 ## 4. Create the web app and interconnect it with the REST API of ELK
 
