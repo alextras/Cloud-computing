@@ -79,7 +79,7 @@ Then you up the docker compose
 
 > ! If there is an ERROR message try this
 
-`$ dkpg`
+`$ dpkg -r --force-depends golang-docker-credential-helpers `
 
 
 ## 4. Create the web app and interconnect it with the REST API of ELK
