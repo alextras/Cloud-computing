@@ -1,5 +1,8 @@
 # Cloud-computing ☁️
 This is a repository for the semester project in cloud computing
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
 
 **Aim** of the project is:
 - to create a **web app** 
@@ -9,7 +12,6 @@ This is a repository for the semester project in cloud computing
   - the web app
   - the ELK stack
   - the secure function of ELK stack using the TLS protocol
-[^1]: This is the footnote.
 
 **Steps** that will be followed:
 ## 1. Create a VM that will host the ELK stack and the web app
