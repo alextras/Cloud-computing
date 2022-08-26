@@ -93,6 +93,35 @@ sudo docker compose up -d
 > dpkg -r --force-depends golang-docker-credential-helpers
 > ```
 
+## Filebeat installation
+# Install filebeat as a service
+
+Step 1. Install filebeat
+```console
+curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.3.3-amd64.deb
+sudo dpkg -i filebeat-8.3.3-amd64.deb
+```
+
+Step 2. Set the host and port where Filebeat can find the Elasticsearch installation, and set the username and password of a user who is authorized to set up Filebeat
+Filebeat
+
+Step 3: Collect log data
+
+Step 4. Set up assets
+```console
+filebeat setup -e
+```
+
+Step 5: Start Filebeat
+```console
+sudo service filebeat start
+```
+
+Step 6: View your data in Kibana
+Point your browser to http://localhost:5601, replacing `localhost` with the name of the Kibana host
+
+
+
 ## 4. Create the web app and interconnect it with the REST API of ELK
 
 
