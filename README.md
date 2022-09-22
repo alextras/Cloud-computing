@@ -66,7 +66,33 @@ In sshd_config we set PermitRootLogin to no
 ## 3. Set up ELK stack (using Docker) and secure it using TLS protocol
 
 ### Docker setup
-At first you need to set up Docker 🐳
+At first you need to install Docker Engine 🐳
+
+Uninstall old versions
+```console
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+Set up the repository
+1. Update the apt package index and install packages to allow apt to use a repository over HTTPS
+```console
+sudo apt-get update
+sudo apt-get install \
+  ca-certificates \
+  curl \
+  gnupg \
+  lsb-release
+```
+
+2. Add Docker’s official GPG key:
+```console
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+
+3. Use the following command to set up the repository:
+
+
+Install Docker Engine
 
 ### ELK setup
 Then you need to set up ELK using docker
