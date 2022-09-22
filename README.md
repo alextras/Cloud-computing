@@ -90,9 +90,24 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 ```
 
 3. Use the following command to set up the repository:
-
+```console
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
 
 Install Docker Engine
+1. Update the apt package index, and install the latest version of Docker Engine, containerd, and Docker Compose,
+```console
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+
+2. Verify that Docker Engine is installed correctly by running the hello-world image.
+```console
+sudo service docker start
+sudo docker run hello-world
+```
 
 ### ELK setup
 Then you need to set up ELK using docker
