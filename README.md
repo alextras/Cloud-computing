@@ -66,7 +66,7 @@ In sshd_config we set PermitRootLogin to no
 ## 3. Set up ELK stack (using Docker) and secure it using TLS protocol
 
 ### Docker setup
-At first you need to install Docker Engine as shown in the [official page] (https://docs.docker.com/engine/install/ubuntu/) 🐳
+At first you need to install Docker Engine as shown in the [official page](https://docs.docker.com/engine/install/ubuntu/) 🐳
 
 Uninstall old versions
 ```console
