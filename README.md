@@ -4,7 +4,7 @@ This is a repository for the semester project in cloud computing
 **Aim** of the project is:
 - to create a **web app** 
   - which queries from **Elasticsearch**
-  - using Java (Maven or Spring Boot)
+  - using Java (Spring Boot)
 - to describe the process and the difficulties in building
   - the web app
   - the ELK stack
@@ -120,12 +120,3 @@ sudo service filebeat start
 **Step 6: View your data in Kibana**
 Point your browser to http://localhost:5601, replacing `localhost` with the name of the Kibana host
 
-
-
-## 4. Create the web app and interconnect it with the REST API of ELK
-
-
-## 5. Import data through Log shippers (beat systems) or dummy data from ELK
-
-
-## 6. Make queries and observe the results both in Kibana and in the app's UI
